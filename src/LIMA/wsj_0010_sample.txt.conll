@@ -1,0 +1,110 @@
+1	When	when	ADV	ADV	_	_	_	_	_	_
+2	it	it	PRON	PRON	_	_	3	SUJ_V	_	_
+3	's	be	V	VERB	_	_	_	_	_	_
+4	time	time	NC	NOUN	_	_	3	COD_V	_	_
+5	for	for	PREP	ADP	_	_	6	Dummy	_	_
+6	their	their	PRON	PRON	_	_	8	det	_	_
+7	biannual	biannual	ADJ	ADJ	_	_	8	ADJPRENSUB	_	_
+8	powwow	powwow	NC	NOUN	_	_	9	Dummy	_	_
+9	,	,	PONCTU	COMMA	_	_	10	Dummy	_	_
+10	the	the	DET	DET	_	_	13	det	_	_
+11	nation	nation	NC	NOUN	_	_	12	ADJPRENSUB	_	_
+12	manufacturing	manufacturing	NC	NOUN	_	_	13	ADJPRENSUB	_	_
+13	titans	titan	NC	NOUN	_	_	15	SUJ_V	_	_
+14	typically	typically	ADV	ADV	_	_	15	AdvVerbe	_	_
+15	jet off	jet off	V	VERB	_	_	_	_	_	_
+16	to	to	PREP	ADP	_	_	19	PREPSUB	_	_
+17	the	the	DET	DET	_	_	19	det	_	_
+18	sunny	sunny	ADJ	ADJ	_	_	19	ADJPRENSUB	_	_
+19	confines	confines	NC	NOUN	_	_	15	CPL_V	_	_
+20	of	of	PREP	ADP	_	_	22	PREPSUB	_	_
+21	resort	resort	NC	NOUN	_	_	22	ADJPRENSUB	_	_
+22	towns	town	NC	NOUN	_	_	19	COMPDUNOM	_	_
+23	like	like	PREP	ADP	_	_	24	PREPSUB	_	_
+24	Boca Raton	Boca Raton	NP	PROPN	Location.LOCATION	_	22	COMPDUNOM	_	_
+25	and	and	CONJ	CONJ	_	_	26	Dummy	_	_
+26	Hot Springs	Hot Springs	NP	PROPN	_	_	27	Dummy	_	_
+27	.	.	PONCTU	SENT	_	_	_	Dummy	_	_
+
+1	Not	Not	ADV	ADV	_	_	2	Dummy	_	_
+2	this	this	DET	DET	_	_	3	det	_	_
+3	year	year	NC	NOUN	_	_	4	Dummy	_	_
+4	.	.	PONCTU	SENT	_	_	_	_	_	_
+
+1	The	the	DET	DET	_	_	2	det	_	_
+2	National Association	national association	NP	PROPN	Organization.ORGANIZATION	_	5	SUJ_V	_	_
+3	of	of	PREP	ADP	_	_	4	PREPSUB	_	_
+4	Manufacturers	manufacturer	NC	NOUN	_	_	2	COMPDUNOM	_	_
+5	settled	settle	V	VERB	_	_	_	_	_	_
+6	on	on	PREP	ADP	_	_	9	PREPSUB	_	_
+7	the	the	DET	DET	_	_	9	det	_	_
+8	Hoosier	Hoosier	NP	PROPN	Person.PERSON	_	9	ADJPRENSUB	_	_
+9	capital	capital	NC	NOUN	_	_	5	CPL_V	_	_
+10	of	of	PREP	ADP	_	_	11	PREPSUB	_	_
+11	Indianapolis	Indianapolis	NP	PROPN	Location.LOCATION	_	9	COMPDUNOM	_	_
+12	for	for	PREP	ADP	_	_	13	Dummy	_	_
+13	its	its	PRON	PRON	_	_	16	det	_	_
+14	fall	fall	NC	NOUN	_	_	15	ADJPRENSUB	_	_
+15	board	board	NC	NOUN	_	_	16	ADJPRENSUB	_	_
+16	meeting	meeting	NC	NOUN	_	_	17	Dummy	_	_
+17	.	.	PONCTU	SENT	_	_	_	Dummy	_	_
+
+1	And	and	CONJ	CONJ	_	_	2	Dummy	_	_
+2	the	the	DET	DET	_	_	3	det	_	_
+3	city	city	NC	NOUN	_	_	4	SUJ_V	_	_
+4	decided	decide	V	VERB	_	_	_	_	_	_
+5	to	to	PREP	ADP	_	_	6	PrepInf	_	_
+6	treat	treat	V	VERB	_	_	4	CPLV_V	_	_
+7	its	its	PRON	PRON	_	_	8	det	_	_
+8	guests	guest	NC	NOUN	_	_	6	COD_V	_	_
+9	more	many	ADV	ADV	_	_	8	AdvSub	_	_
+10	like	like	PREP	ADP	_	_	11	PREPSUB	_	_
+11	royalty	royalty	NC	NOUN	_	_	9	COMPADV	_	_
+12	or	or	CONJ	CONJ	_	_	11	COORD1	_	_
+13	rock	rock	NC	NOUN	_	_	14	ADJPRENSUB	_	_
+14	stars	star	NC	NOUN	_	_	_	_	_	_
+15	than	than	PREP	ADP	_	_	17	PREPSUB	_	_
+16	factory	factory	NC	NOUN	_	_	17	ADJPRENSUB	_	_
+17	owners	owner	NC	NOUN	_	_	14	COMPDUNOM	_	_
+18	.	.	PONCTU	SENT	_	_	_	_	_	_
+
+1	The	the	DET	DET	_	_	2	det	_	_
+2	idea	idea	NC	NOUN	_	_	3	Dummy	_	_
+3	,	,	PONCTU	COMMA	_	_	4	Dummy	_	_
+4	of course	of course	ADV	ADV	_	_	5	Dummy	_	_
+5	:	:	PONCTU	COLON	_	_	_	_	_	_
+
+1	to	to	PREP	ADP	_	_	2	PrepInf	_	_
+2	prove	prove	V	VERB	_	_	3	Dummy	_	_
+3	to	to	PREP	ADP	_	_	4	Dummy	_	_
+4	125	125	NOMBRE	NUM	Numex.NUMBER	_	6	det	_	_
+5	corporate	corporate	ADJ	ADJ	_	_	7	ADJPRENSUB	_	_
+6	decision	decision	NC	NOUN	_	_	7	ADJPRENSUB	_	_
+7	makers	maker	NC	NOUN	_	_	14	SUJ_V	_	_
+8	that	that	CONJ	SCONJ	_	_	9	Dummy	_	_
+9	the	the	DET	DET	_	_	10	det	_	_
+10	buckle	buckle	NC	NOUN	_	_	14	SUJ_V	_	_
+11	on	on	PREP	ADP	_	_	13	PREPSUB	_	_
+12	the	the	DET	DET	_	_	13	det	_	_
+13	Rust Belt	Rust belt	NP	PROPN	Location.LOCATION	_	10	COMPDUNOM	_	_
+14	is	be	V	VERB	_	_	_	_	_	_
+15	n't	not	ADV	PART	_	_	16	ADVADV	_	_
+16	so	so	ADV	ADV	_	_	17	ADVADJ	_	_
+17	rusty	rusty	ADJ	ADJ	_	_	14	ATB_S	_	_
+18	after	after	PREP	ADP	_	_	19	Dummy	_	_
+19	all	all	DET	DET	_	_	20	Dummy	_	_
+20	,	,	PONCTU	COMMA	_	_	21	Dummy	_	_
+21	that	that	CONJ	SCONJ	_	_	22	Dummy	_	_
+22	it	it	PRON	PRON	_	_	23	SUJ_V	_	_
+23	's	be	V	VERB	_	_	_	_	_	_
+24	a	a	DET	DET	_	_	26	det	_	_
+25	good	good	ADJ	ADJ	_	_	26	ADJPRENSUB	_	_
+26	place	place	NC	NOUN	_	_	23	COD_V	_	_
+27	for	for	PREP	ADP	_	_	29	PREPSUB	_	_
+28	a	a	DET	DET	_	_	29	det	_	_
+29	company	company	NC	NOUN	_	_	26	COMPDUNOM	_	_
+30	to	to	PREP	ADP	_	_	31	PrepInf	_	_
+31	expand	expand	V	VERB	_	_	29	MOD_N	_	_
+32	.	.	PONCTU	SENT	_	_	_	_	_	_
+
+

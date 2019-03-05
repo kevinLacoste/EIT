@@ -1,0 +1,13 @@
+2) b)
+evaluate.py wsj_0010_sample.txt.pos.stanford wsj_0010_sentence.pos.ref 
+
+Warning: the reference and the candidate consists of different number of lines!
+Word precision: 0.967741935484
+Word recall: 0.967741935484
+Tag precision: 0.935483870968
+Tag recall: 0.935483870968
+Word F-measure: 0.967741935484
+Tag F-measure: 0.935483870968
+
+2) c)
+
