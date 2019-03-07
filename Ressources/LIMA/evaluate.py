@@ -377,6 +377,7 @@ if __name__ == '__main__':
    word_recall = float(nTotalCorrectWords) / float(nReferenceWords)
    tag_precision = float(nTotalCorrectTags) / float(nCandidateWords)
    tag_recall = float(nTotalCorrectTags) / float(nReferenceWords)
+   
    word_fmeasure = (2*word_precision*word_recall)/(word_precision+word_recall)
    if tag_precision+tag_recall==0:
       tag_fmeasure = 0.0
