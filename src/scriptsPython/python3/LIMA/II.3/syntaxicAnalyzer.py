@@ -14,7 +14,7 @@ if __name__ == "__main__" :
 			
 			for child in root :
 				lemma = child.find("lemma").text
-				macro = child.find("macro").text
+				macro = child.find("micro").text
 				sentence = sentence + lemma + "_" + macro + " "
 		
 		# Partie conll
@@ -23,10 +23,10 @@ if __name__ == "__main__" :
 			for line in f.readlines() :
 				if line != "\n" :
 					words = line.split("\t")
-					sentence = sentence + words[1] + "_" + words[3] + " "
+					sentence = sentence + words[1] + "_" + words[4] + " "
 			f.close()
 		
 		print(sentence)
 	
 	else :
-		print("Usage : ex3.py <file>.disambiguated.xml or ex3.py <file>.conll")
+		print ("Usage : ex3.py <file>.disambiguated.xml or ex3.py <file>.conll")

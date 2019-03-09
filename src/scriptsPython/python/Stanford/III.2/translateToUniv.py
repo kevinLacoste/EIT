@@ -31,6 +31,8 @@ def switchTags (lines, translationTable) :
 						# Cas ou le dernier element est bien un tag lima
 						if tag in transKeys :
 							text = text + translationTable[tag]
+						elif tag.replace("\r\n", "").replace("\n", "") in transKeys :
+							text = text + translationTable[tag.replace("\r\n", "").replace("\n", "")] + "\n"
 						# Cas ou ce n'est pas un tag lima
 						else :
 							text = text + tag

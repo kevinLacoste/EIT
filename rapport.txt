@@ -38,5 +38,15 @@ univ :  Warning: the reference and the candidate consists of different number of
 	Tag F-measure: 0.935483870968
 
 Resultats identiques !!!
+
+NOTE IMPORTANTE : A REFAIRE !!! (PREND 2 SEC, RAPIDE)
+
+Partie V
+
+LIMA
+
+Person.PERSON 				PERSON			
+Location.LOCATION			LOCATION
+Organization.ORGANIZATION		ORGANIZATION
 	
 
