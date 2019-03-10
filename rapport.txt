@@ -17,29 +17,36 @@ Partie II
 	Word F-measure: 0.950819672131
 	Tag F-measure: 0.786885245902
 
+Idem mais avec le sample :
+	python evaluate.py wsj_0010_sample.txt.pos.lima.univ wsj_0010_sample.pos.ref.converted.univ 
+	Word precision: 0.990825688073
+	Word recall: 0.981818181818
+	Tag precision: 0.743119266055
+	Tag recall: 0.736363636364
+	Word F-measure: 0.986301369863
+	Tag F-measure: 0.739726027397
+
+
 Partie III
 
 2 	python evaluate.py wsj_0010_sample.txt.pos.stanford wsj_0010_sentence.pos.ref 
-	Warning: the reference and the candidate consists of different number of lines!
-	Word precision: 0.967741935484
-	Word recall: 0.967741935484
-	Tag precision: 0.935483870968
-	Tag recall: 0.935483870968
-	Word F-measure: 0.967741935484
-	Tag F-measure: 0.935483870968
+	Word precision: 0.990909090909
+	Word recall: 0.990909090909
+	Tag precision: 0.972727272727
+	Tag recall: 0.972727272727
+	Word F-measure: 0.990909090909
+	Tag F-measure: 0.972727272727
 
-with 	python evaluate.py wsj_0010_sample.txt.pos.stanford.univ wsj_0010_sentence.pos.ref.univ
-univ :  Warning: the reference and the candidate consists of different number of lines!
-	Word precision: 0.967741935484
-	Word recall: 0.967741935484
-	Tag precision: 0.935483870968
-	Tag recall: 0.935483870968
-	Word F-measure: 0.967741935484
-	Tag F-measure: 0.935483870968
+with univ :
+	python evaluate.py wsj_0010_sample.txt.pos.stanford.univ wsj_0010_sample.pos.ref.converted.univ 
+	Word precision: 0.990909090909
+	Word recall: 0.990909090909
+	Tag precision: 0.972727272727
+	Tag recall: 0.972727272727
+	Word F-measure: 0.990909090909
+	Tag F-measure: 0.972727272727
 
-Resultats identiques !!!
-
-NOTE IMPORTANTE : A REFAIRE !!! (PREND 2 SEC, RAPIDE)
+Resultats identiques et a priori meilleurs résultats que pour LIMA
 
 Partie V
 
