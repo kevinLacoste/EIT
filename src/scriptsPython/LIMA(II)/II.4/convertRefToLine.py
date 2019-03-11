@@ -6,9 +6,9 @@ if __name__ == "__main__" :
 	argc = len(sys.argv)
 	argv = sys.argv
 	
-	if argc > 1 :
+	if argc > 2 :
 		inputFile = open(argv[1], "r")
-		outputFile = open(argv[1] + ".converted", "w")
+		outputFile = open(argv[2], "w")
 		for line in inputFile.readlines() :
 			words = line.split("\t")
 			for i in range(len(words)) :
@@ -19,4 +19,4 @@ if __name__ == "__main__" :
 		inputFile.close()
 		outputFile.close()
 	else :
-		print "Usage : python convertRefToLine.py <file.ref> (Genere un fichier ayant pour nom <file.ref>.converted)"
+		print "Usage : python convertRefToLine.py <file.ref> <outputFile>"

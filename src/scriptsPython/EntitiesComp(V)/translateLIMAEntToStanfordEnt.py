@@ -11,11 +11,15 @@ def createTranslationTable(translationFile) :
 
 def writeEntitiesFromLIMAToStanford(inputFile, translationTable) :
 	text = ""
+	isLineJump = False
 	
 	for line in inputFile.readlines() :
 		element = line.split("\t")
-		if element[0] == "\n" or element[0] == "\n" :
+		if element[0] == "\n" or element[0] == "\r\n" :
 			text = text[:len(text)-1] + "\n"
+			isLineJump = True
+		elif isLineJump :
+			isLineJump = False
 		elif element[5] in translationTable.keys() :
 			words = element[1].split(" ")
 			for word in words :
@@ -30,19 +34,18 @@ if __name__ == "__main__" :
 	argc = len(sys.argv)
 	argv = sys.argv
 	
-	if argc > 2 and argv[2].endswith(".conll") :
+	if argc > 3 and argv[2].endswith(".conll") :
 		translationFile = open(argv[1], "r")
 		inputFile = open(argv[2], "r")
 		
 		translationTable = createTranslationTable(translationFile)
 		outputText = writeEntitiesFromLIMAToStanford(inputFile, translationTable)
 		
-		outputName = argv[2][:len(argv[2])-6] + ".output"
-		outputFile = open(outputName, "w")
+		outputFile = open(argv[3], "w")
 		outputFile.write(outputText)
 		
 		translationFile.close()
 		inputFile.close()
 		outputFile.close()
 	else :
-		print "Usage : python translateLIMAEntToStanfordEnt.py <table for LIMA to Stanford> <file>.conll"
+		print "Usage : python translateLIMAEntToStanfordEnt.py <table for LIMA to Stanford> <file>.conll <outputFile>"

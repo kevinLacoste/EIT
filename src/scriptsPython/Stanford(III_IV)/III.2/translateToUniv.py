@@ -37,6 +37,7 @@ def switchTags (lines, translationTable) :
 						else :
 							text = text + tag
 						text = text + " "
+		text = text[:len(text)-1]
 	return text
 
 if __name__ == "__main__" :

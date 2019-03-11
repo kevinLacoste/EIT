@@ -11,7 +11,6 @@ def extractEntities(inputText) :
 	entities = dict()
 	
 	nbWords = 0
-	maxLength = 25
 	
 	for line in inputText :
 		words = line.split(" ")
@@ -29,48 +28,34 @@ def extractEntities(inputText) :
 					entities[trueWord] = specificEntity(trueWord, tag)
 				else :
 					entities[trueWord].count = entities[trueWord].count + 1
-			
-			# Recherche de la longueur de trueWord
-			if len(trueWord) > maxLength :
-				maxLength = len(trueWord)
-			
 			nbWords = nbWords + 1
 	
 	entities["|nbWords|"] = nbWords
-	entities["|maxLength|"] = maxLength
 	return entities
 
 if __name__ == "__main__" :
 	argv = sys.argv
 	argc = len(argv)
-	if argc > 1 :
+	if argc > 2 :
 		inputFile = open(argv[1], "r")
+		outputFile = open(argv[2], "w")
 		entities = extractEntities(inputFile.readlines())
 		
 		# Valeurs arbitraires
 		nbWords = entities["|nbWords|"]
-		maxLength = entities["|maxLength|"]
 		
 		# Suppression des valeurs au dessus
 		entities.pop("|nbWords|", None)
-		entities.pop("|maxLength|", None)
 		
 		# Marche parce qu'on traite de l'anglais
 		keys = list(entities.keys())
 		keys.sort(key=str.lower)
 		
-		print "Entite nommee", " "*(maxLength-13), "Type", " "*(maxLength-4), "Nb occurences   %(texte)"
-		print ""
-		
 		for key in keys :
 			entity = entities[key]
-			nameLength = len(entity.name)
-			typeLength = len(entity.entityType)
-			print entity.name, " "*(maxLength-nameLength), entity.entityType, " "*(maxLength-typeLength+6), entity.count, " "*(8-len(str(entity.count))), round(100.0*entity.count/nbWords, 2), " %"
-			
-		print ""
-		print "Nombre de mots dans le document : ", nbWords
+			outputFile.write(entity.name + "\t" + entity.entityType + "\t" + str(entity.count) + "\t" + str(round(100.0*entity.count/nbWords, 2)) + "\n")
 		
 		inputFile.close()
+		outputFile.close()
 	else :
-		print "usage: python stanfordEntitiesExtractor.py <file>"
+		print "Usage : python stanfordEntitiesExtractor.py <inputFile> <outputFile>"
